@@ -1,0 +1,38 @@
+# 二进制文件
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 测试文件
+*.test
+*.out
+
+# 敏感配置
+config/config.local.yaml
+config/config.yaml
+
+# 证书文件
+certs/
+*.key
+*.pem
+
+# 运行时数据（包含用户信息、会话 token 等敏感信息）
+runtime/
+
+# 依赖
+vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+logs/
