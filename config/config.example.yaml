@@ -1,0 +1,21 @@
+# 飞书配置
+feishu:
+  app_id: "cli_xxxxxxxxxxxxx"                  # 飞书应用 App ID
+  app_secret: "xxxxxxxxxxxxxxxxxxxxxxxx"       # 飞书应用 App Secret
+  sync_enabled: true
+  user_page_size: 100                          # 每页用户数
+  department_page_size: 100                    # 每页部门数
+
+# LDAP 配置
+ldap:
+  enabled: true
+  address: "0.0.0.0:389"
+  base_dn: "dc=example,dc=com"
+  service_bind_dn: "cn=admin,dc=example,dc=com"  # 服务连接的固定账户 DN
+  service_bind_password: "admin_password"        # 服务连接的固定密码
+
+# 服务器配置
+server:
+  http_port: 8080
+  base_url: "http://localhost:8080"       # 服务端基础 URL
+  callback_url: "/api/auth/callback"      # OAuth 回调 URL（支持 path 或完整 URL）
